@@ -36,3 +36,10 @@ h2 {
   margin-top: 18px;
   background-color: black;
 }
+
+.refreshButton {
+  display: block;
+  margin: auto;
+  width: 200px;
+  height: 30px;
+}
