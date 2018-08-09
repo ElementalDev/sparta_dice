@@ -10,7 +10,7 @@ function rollDice(randNum) {
   for (var i = 0; i < innerSquare.length; i++) {
     innerSquare[i].className = "innerSquare";
   }
-  
+
   switch (randNum) {
     case 1: // When randNum is 1, change the class name to newClass
       innerSquare[4].className = newClass;
@@ -51,4 +51,14 @@ function rollDice(randNum) {
       innerSquare[8].className = newClass;
       break;
     }
+}
+
+var button = document.createElement("button"); //Create the button within the HTML
+button.innerHTML = "Click to Roll"; //Give it some text
+button.className = "refreshButton" //Give it a class name
+
+document.body.appendChild(button); //Add the button to the body
+
+button.onclick = function() { //Select the button and add the onclick event listener.
+  rollDice(randomNumberGen());
 }
