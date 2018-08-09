@@ -10,6 +10,7 @@ function rollDice(randNum) {
   for (var i = 0; i < innerSquare.length; i++) {
     innerSquare[i].className = "innerSquare";
   }
+  
   switch (randNum) {
     case 1: // When randNum is 1, change the class name to newClass
       innerSquare[4].className = newClass;
